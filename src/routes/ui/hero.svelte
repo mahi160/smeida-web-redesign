@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="container grid items-center justify-center grid-cols-1 px-16 py-5 mx-auto md:grid-cols-2"
+	class="container grid items-center justify-center grid-cols-1 pt-4 mx-auto sm:pt-10 md:grid-cols-2 sm:pb-20 md:px-12" id="image"
 >
 	<article class="flex flex-col items-center justify-center sm:items-start gap-y-8">
 		<HeroProduct />
@@ -26,16 +26,24 @@
 			required to be a driving force in the <span class="underline">digital transformation</span> of
 			the industry
 		</p>
-		<div class="flex flex-col items-center justify-center mt-6 sm:flex-row">
+		<div class="flex flex-col items-center justify-center sm:flex-row">
 			<a href="/lets-talk">
 				<button
-					class="px-20 py-2 text-2xl font-semibold border-2 border-orange-500 rounded-md bg-orange-50"
+					class="px-16 py-2 text-xl font-semibold border-2 border-orange-500 rounded-md bg-orange-50"
 					>Learn How</button
 				>
 			</a>
 		</div>
 	</article>
-	<section class="hidden sm:block">
-		<img class="aspect-video" src="/assets/home/home-top.png" alt="Hero" />
+	<section class="items-center justify-center hidden w-full h-full sm:flex" >
+		<img class="aspect-video" src="/assets/home/hero-image.svg" alt="Hero" />
 	</section>
 </div>
+
+<style>
+	/* #image{
+		background-image: url('/assets/home/hero-gradient.svg');
+		background-position: top;
+		background-repeat: no-repeat;
+	} */
+</style>
