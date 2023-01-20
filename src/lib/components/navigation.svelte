@@ -4,7 +4,8 @@
 
 <nav class="container mx-auto p-4 flex items-center justify-between">
 	<div class="logo">
-		<img src="/logo/named-black.svg" alt="sMedia Ventures" />
+		<img class="dark:hidden block" src="/logo/named-black.svg" alt="sMeida" />
+		<img class="hidden dark:block" src="/logo/named-white.svg" alt="sMeida" />
 	</div>
 
 	<ul class="flex items-center justify-end gap-4">
