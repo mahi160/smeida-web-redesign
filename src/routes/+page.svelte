@@ -1,6 +1,7 @@
 <script>
 	import Hero from './ui/hero.svelte';
 	import Product from './ui/product.svelte';
+	import Rating from './ui/rating.svelte';
 </script>
 
 <svelte:head>
@@ -13,3 +14,4 @@
 
 <Hero />
 <Product />
+<Rating />
