@@ -7,7 +7,7 @@
 	<header class="shadow-md">
 		<Navigation />
 	</header>
-	<main>
+	<main class="container mx-auto md:px-12">
 		<slot />
 	</main>
 
@@ -54,5 +54,4 @@
 			),
 			linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
 	} */
-
 </style>

@@ -3,7 +3,8 @@
 </script>
 
 <div
-	class="container grid items-center justify-center grid-cols-1 pt-4 mx-auto sm:pt-10 md:grid-cols-2 sm:pb-20 md:px-12" id="image"
+	class="grid items-center justify-center grid-cols-1 pt-4 sm:pt-10 md:grid-cols-2 sm:pb-20"
+	id="image"
 >
 	<article class="flex flex-col items-center justify-center sm:items-start gap-y-8">
 		<HeroProduct />
@@ -35,7 +36,7 @@
 			</a>
 		</div>
 	</article>
-	<section class="items-center justify-center hidden w-full h-full sm:flex" >
+	<section class="items-center justify-center hidden w-full h-full sm:flex">
 		<img class="aspect-video" src="/assets/home/hero-image.svg" alt="Hero" />
 	</section>
 </div>

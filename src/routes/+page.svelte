@@ -1,5 +1,6 @@
 <script>
 	import Hero from './ui/hero.svelte';
+	import Product from './ui/product.svelte';
 </script>
 
 <svelte:head>
@@ -11,3 +12,4 @@
 </svelte:head>
 
 <Hero />
+<Product />
