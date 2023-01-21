@@ -41,6 +41,6 @@
 	.required::after {
 		content: '*';
 		margin-left: 4px;
-		font-size: 12px;
+		font-size: 16px;
 	}
 </style>

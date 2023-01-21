@@ -20,7 +20,7 @@
 
 <a href={products[index].link}>
 	<button
-		class="rounded-md py-1 px-4 shadow-sm text-sm lg:text-lg font-semibold {products[index]
+		class="rounded-md py-1 px-5 shadow-sm text-sm lg:text-xl font-semibold {products[index]
 			.color}"
 	>
 		{products[index].name}

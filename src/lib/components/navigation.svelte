@@ -3,10 +3,10 @@
 </script>
 
 <nav class="container mx-auto p-4 flex items-center justify-between">
-	<div class="logo">
-		<img class="dark:hidden block" src="/logo/named-black.svg" alt="sMeida" />
-		<img class="hidden dark:block" src="/logo/named-white.svg" alt="sMeida" />
-	</div>
+	<a class="logo" href="/">
+		<img class="dark:hidden block w-40" src="/logo/named-black.svg" alt="sMedia Ventures" />
+		<img class="hidden dark:block w-40" src="/logo/named-white.svg" alt="sMedia Ventures" />
+	</a>
 
 	<ul class="flex items-center justify-end gap-4">
 		{#each Routes as route}
