@@ -12,13 +12,13 @@
 <div class="flex flex-col gap-2">
 	<label
 		for={name}
-		class="text-lg font-medium text-text-500 dark:text-text-400 {required ? 'required' : ''}"
+		class="text-sm sm:text-lg font-medium text-text-500 dark:text-text-400 {required ? 'required' : ''}"
 		>{label}</label
 	>
 	{#if !textarea}
 		<input
 			{type}
-			class="px-3 py-3 text-base bg-white border rounded-lg dark:bg-neutral-800 border-neutral-500 dark:border-neutral-600 focus:outline-none focus:border-primary-500 dark:focus:border-primary-500 caret-primary-500"
+			class="px-2 py-2 text-sm bg-white border rounded-lg sm:px-3 sm:py-3 sm:text-base dark:bg-neutral-800 border-neutral-500 dark:border-neutral-600 focus:outline-none focus:border-primary-500 dark:focus:border-primary-500 caret-primary-500"
 			maxlength="256"
 			{name}
 			data-name={name}
@@ -28,7 +28,7 @@
 		/>
 	{:else}
 		<textarea
-			class="px-3 py-3 text-base bg-white border rounded-lg dark:bg-neutral-800 border-neutral-500 dark:border-neutral-600 focus:outline-none focus:border-primary-500 dark:focus:border-primary-500 caret-primary-500"
+			class="px-2 py-2 text-sm bg-white border rounded-lg sm:px-3 sm:py-3 sm:text-base dark:bg-neutral-800 border-neutral-500 dark:border-neutral-600 focus:outline-none focus:border-primary-500 dark:focus:border-primary-500 caret-primary-500"
 			{name}
 			data-name={name}
 			placeholder={ph}

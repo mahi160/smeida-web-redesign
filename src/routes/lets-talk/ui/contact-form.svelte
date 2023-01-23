@@ -9,9 +9,11 @@
 	];
 </script>
 
-<form class="grid items-start justify-center w-full grid-cols-1 gap-5 h-fit sm:grid-cols-2">
+<form
+	class="grid items-start justify-center w-full grid-cols-1 gap-5 p-4 rounded shadow sm:shadow-none h-fit sm:grid-cols-2"
+>
 	{#each formFields as _ff, i}
-		<div class={_ff.label === 'Message' ? 'col-span-2' : ''}>
+		<div class={_ff.label === 'Message' ? 'sm:col-span-2' : ''}>
 			<FormField {..._ff} textarea={_ff.label === 'Message'} rows={10} />
 		</div>
 	{/each}
