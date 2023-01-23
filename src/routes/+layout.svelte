@@ -4,11 +4,11 @@
 	import '../app.css';
 </script>
 
-<section class="flex flex-col h-screen gap-5 text-text-700 dark:bg-neutral-800 dark:text-text-100">
-	<header class="shadow-sm shadow-primary-100/50">
+<section class="flex flex-col h-screen text-text-800 dark:bg-neutral-800 dark:text-text-100">
+	<header class="shadow-sm shadow-primary-100/50 dark:shadow-primary-800/50">
 		<Navigation />
 	</header>
-	<main class="container mx-auto md:px-12">
+	<main class="grid items-start justify-center gap-10">
 		<slot />
 	</main>
 

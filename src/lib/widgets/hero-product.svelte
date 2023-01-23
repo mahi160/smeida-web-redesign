@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	const products = [
 		{ name: 'Smart Offer', link: '', color: 'text-sky-500' },
 		{ name: 'DataSherpa', link: '', color: 'text-indigo-500' },
 		{ name: 'Performance Dashboard', link: '', color: 'text-green-500' },
-		{ name: 'Engaged Prospect Metric', link: '', color: 'text-amber-500' }
+		{ name: 'Engaged Prospect Metric', link: '', color: 'text-purple-500' }
 	];
 	let index = 0;
 	onMount(() => {
@@ -18,11 +19,10 @@
 	});
 </script>
 
-<a href={products[index].link}>
-	<button
-		class="rounded-md py-1 px-5 shadow-sm text-sm lg:text-xl font-semibold {products[index]
-			.color}"
-	>
-		{products[index].name}
-	</button>
-</a>
+{#key products[index]}
+	<a href={products[index].link} in:fade={{ duration: 1500 }}>
+		<button class="text-xl font-semibold {products[index].color} underline underline-offset-4">
+			{products[index].name}
+		</button>
+	</a>
+{/key}
