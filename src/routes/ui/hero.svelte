@@ -1,5 +1,5 @@
 <script>
-	import HeroProduct from '$lib/widgets/hero-product.svelte';
+	import HeroProduct from './hero-product.svelte';
 </script>
 
 <!-- <div
@@ -42,8 +42,8 @@
 </div> -->
 
 <section class="relative flex flex-col">
-	<img class="absolute w-full h-full opacity-5" src="/assets/home/meteor.svg" alt="" />
-	<img class="absolute bottom-0 w-full h-2/3 opacity-5" src="/assets/home/chart.svg" alt="" />
+	<img class="absolute w-full h-full opacity-10" src="/assets/home/meteor.svg" alt="" />
+	<img class="absolute bottom-0 w-full h-2/3 opacity-10" src="/assets/home/chart.svg" alt="" />
 	<article
 		class="container relative z-10 grid grid-cols-1 gap-5 px-5 py-10 mx-auto sm:p-20 sm:grid-cols-2"
 	>

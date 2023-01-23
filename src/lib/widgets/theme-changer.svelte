@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
+	import Icon from './icon.svelte';
 
 	$: darkMode = true;
 	const toggleTheme = () => {
@@ -9,8 +10,7 @@
 </script>
 
 {#key darkMode}
-	<button on:click={toggleTheme} in:fade>
-		<box-icon color="#219cfe" name={darkMode ? 'sun' : 'moon'} animation="tada-hover" />
-		<!-- <MatSymbol symbol={darkMode ? 'dark_mode' : 'light_mode'} /> -->
+	<button class="flex items-center justify-center" on:click={toggleTheme} in:fade>
+		<Icon type="mat" icon={!darkMode ? 'dark_mode' : 'light_mode'} />
 	</button>
 {/key}

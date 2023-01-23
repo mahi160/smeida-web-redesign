@@ -1,5 +1,5 @@
 <script>
-	import MatSymbol from '$lib/widgets/mat-symbol.svelte';
+	import Icon from '$lib/widgets/icon.svelte';
 
 	const generalContact = [
 		{ name: 'Phone', value: '1-306-775-0062', symbol: 'phone' },
@@ -14,16 +14,16 @@
 	];
 </script>
 
-<section class="max-w-[22rem] p-6 border-2 rounded border-accent-100">
+<section class="max-w-[22rem] p-6 border-2 rounded border-accent-100 dark:border-accent-500">
 	<h2 class="mb-8 text-3xl font-medium">General Contact Information</h2>
 	<ul class="grid items-center justify-center gap-4 mt-5">
 		{#each generalContact as _gc, i}
 			<li class="flex flex-col gap-1">
 				<b class="flex items-center justify-start gap-2 text-sm font-semibold text-primary-500">
-					<MatSymbol symbol={_gc.symbol} />
+					<Icon type="mat" icon={_gc.symbol} />
 					{_gc.name}:
 				</b>
-				<span class="col-span-2 ml-8 text-xl text-text-600">
+				<span class="col-span-2 ml-1 text-xl text-text-600 dark:text-text-200">
 					{#if i < 2}
 						<a href="tel:{_gc.value}" class="hover:underline">
 							{_gc.value}

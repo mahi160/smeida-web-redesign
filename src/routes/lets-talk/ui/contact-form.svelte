@@ -16,5 +16,10 @@
 		</div>
 	{/each}
 
-	<input type="submit" value="Submit" class="py-2 text-base font-medium rounded shadow cursor-pointer bg-accent-300 sm:w-1/2 hover:bg-accent-300/90 text-text-800"/>
+	<input
+		on:click|once|preventDefault={() => {}}
+		type="submit"
+		value="Submit"
+		class="px-5 py-2 text-base font-medium tracking-wider text-white rounded shadow-lg cursor-pointer bg-accent-500 sm:w-1/2 hover:bg-accent-400"
+	/>
 </form>

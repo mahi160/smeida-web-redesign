@@ -1,10 +1,15 @@
 <script lang="ts">
 	import { Routes } from '$lib/utils/routes';
+	import Icon from '$lib/widgets/icon.svelte';
 	import ThemeChanger from '../widgets/theme-changer.svelte';
 
 	const socials = [
-		{ name: 'Facebook', icon: 'facebook', path: 'https://www.facebook.com/sMedia.ca/' },
-		{ name: 'Linkedin', icon: 'linkedin', path: 'https://www.linkedin.com/company/smedia.ca' }
+		{ name: 'Facebook', icon: 'lab la-facebook', path: 'https://www.facebook.com/sMedia.ca/' },
+		{
+			name: 'Linkedin',
+			icon: 'lab la-linkedin',
+			path: 'https://www.linkedin.com/company/smedia.ca'
+		}
 	];
 </script>
 
@@ -32,10 +37,11 @@
 		{#each socials as social}
 			<li>
 				<a href={social.path} target="_blank" rel="noreferrer">
-					<box-icon type="logo" name={social.icon} animation="tada-hover" color="#219cfe" />
+					<Icon type="line" icon={social.icon} className="text-primary-500" />
 				</a>
 			</li>
 		{/each}
+
 		<li><ThemeChanger /></li>
 	</ul>
 </nav>
