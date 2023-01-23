@@ -1,10 +1,11 @@
 <script>
-	import Navigation from '$lib/components/navigation.svelte';
+	import Navigation from '$lib/layouts/navigation.svelte';
+	// import { theme } from '$lib/components/theme-changer.svelte';
 	import '../app.css';
 </script>
 
-<section class="flex flex-col h-screen gap-5">
-	<header class="shadow-md">
+<section class="flex flex-col h-screen gap-5 text-text-700 dark:bg-neutral-800 dark:text-text-100">
+	<header class="shadow-sm shadow-primary-100/50">
 		<Navigation />
 	</header>
 	<main class="container mx-auto md:px-12">

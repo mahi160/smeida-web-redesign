@@ -1,5 +1,5 @@
 <script>
-	import FormField from '$lib/widgets/form-field.svelte';
+	import FormField from '$lib/components/form-field.svelte';
 	const formFields = [
 		{ label: 'First Name', type: 'text', required: true },
 		{ label: 'Last Name', type: 'text', required: true },
