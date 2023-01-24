@@ -2,7 +2,7 @@
 	import { fade } from 'svelte/transition';
 	import Icon from './icon.svelte';
 
-	$: darkMode = true;
+	$: darkMode = false;
 	const toggleTheme = () => {
 		darkMode = !darkMode;
 		darkMode ? document.body.classList.add('dark') : document.body.classList.remove('dark');

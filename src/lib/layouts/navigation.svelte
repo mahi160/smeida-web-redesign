@@ -1,16 +1,8 @@
 <script lang="ts">
+	import { Socials } from '$lib/utils/constants';
 	import { Routes } from '$lib/utils/routes';
 	import Icon from '$lib/widgets/icon.svelte';
 	import ThemeChanger from '../widgets/theme-changer.svelte';
-
-	const socials = [
-		{ name: 'Facebook', icon: 'lab la-facebook', path: 'https://www.facebook.com/sMedia.ca/' },
-		{
-			name: 'Linkedin',
-			icon: 'lab la-linkedin',
-			path: 'https://www.linkedin.com/company/smedia.ca'
-		}
-	];
 </script>
 
 <nav class="container mx-auto p-4 flex items-center justify-between">
@@ -34,7 +26,7 @@
 		{/each}
 	</ul>
 	<ul class="flex items-center justify-end gap-2 opacity-80">
-		{#each socials as social}
+		{#each Socials as social}
 			<li>
 				<a href={social.path} target="_blank" rel="noreferrer">
 					<Icon type="line" icon={social.icon} className="text-primary-500" />

@@ -1,6 +1,6 @@
 <script>
+	import Footer from '$lib/layouts/footer.svelte';
 	import Navigation from '$lib/layouts/navigation.svelte';
-	// import { theme } from '$lib/components/theme-changer.svelte';
 	import '../app.css';
 </script>
 
@@ -14,5 +14,7 @@
 		<slot />
 	</main>
 
-	<footer>a footer</footer>
+	<footer>
+		<Footer />
+	</footer>
 </section>
