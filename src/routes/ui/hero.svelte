@@ -65,7 +65,7 @@
 			</p>
 			<a href="/lets-talk">
 				<button
-					class="px-10 py-3 mt-10 text-xl font-semibold tracking-wider text-white rounded-lg shadow-lg bg-accent-500"
+					class="px-10 py-3 mt-10 text-xl font-semibold tracking-wider text-white rounded-lg shadow-lg bg-accent-500 hover:bg-accent-400"
 				>
 					Learn How
 				</button>
