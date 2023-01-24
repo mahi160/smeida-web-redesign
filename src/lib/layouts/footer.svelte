@@ -37,16 +37,16 @@
 	];
 </script>
 
-<section class="py-5 text-sm">
-	<div class="flex items-center justify-center gap-2">
+<section class="pb-5 text-sm">
+	<div class="flex items-center justify-center gap-11 mb-4">
 		<hr class="border w-full" />
-		<img src="/logo/smedia-transparent.svg" alt="" class="w-16" />
+		<img src="/logo/smedia-transparent.svg" alt="" class="w-7 absolute" />
 		<hr class="border w-full" />
 	</div>
 	<div class="flex flex-col sm:flex-row items-start justify-center gap-x-20 gap-y-8 py-5 px-5">
 		{#each lists as list}
 			<ul>
-				<li class="text-lg font-semibold mb-2">{list.title}</li>
+				<li class="text-base font-semibold mb-2">{list.title}</li>
 				{#each list.links as link}
 					<li class="hover:underline text-text-500 dark:text-text-400">
 						<a href={link.path}>{link.name}</a>

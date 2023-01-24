@@ -29,7 +29,7 @@
 		{#each Socials as social}
 			<li>
 				<a href={social.path} target="_blank" rel="noreferrer">
-					<Icon type="line" icon={social.icon} className="text-primary-500" />
+					<Icon type="line" icon={social.icon} />
 				</a>
 			</li>
 		{/each}

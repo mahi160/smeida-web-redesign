@@ -1,13 +1,13 @@
 <script lang="ts">
 	export let type: 'mat' | 'line';
 	export let icon: string;
-	export let className: string = 'text-primary-500 dark:text-primary-400';
+	export let className: string = 'text-primary-500 dark:text-primary-400 text-3xl';
 </script>
 
 {#if type === 'mat'}
 	<span class="material-symbols-outlined {className}"> {icon} </span>
 {:else}
-	<i class="{icon} text-3xl {className}" />
+	<i class="{icon} {className}" />
 {/if}
 
 <style>
