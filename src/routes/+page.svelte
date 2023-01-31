@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>sMedia| Top Digital Tech Company for Automotive</title>
+	<title>sMedia | Top Digital Tech Company for Automotive</title>
 </svelte:head>
 
 <Hero />
