@@ -29,21 +29,25 @@
 
 <section class="container px-5 pb-10 mx-auto sm:p-20 sm:pt-0">
 	<h2
-		class="max-w-lg pb-6 text-3xl font-semibold md:text-4xl lg:text-5xl sm:max-w-xl md:max-w-3xl lg:max-w-4xl"
+		class="max-w-lg pb-6 mb-4 text-3xl font-semibold md:text-4xl lg:text-5xl sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-primary-500"
 	>
 		Our Achievements
 	</h2>
 
 	<div class="achievements">
-		{#each achievements as achievement}
-			<div class="{achievement.className} shadow rounded-lg p-4 flex items-center justify-start">
+		{#each achievements as achievement, i}
+			<div
+				class="{achievement.className} border-2 border-accent-200 dark:border-accent-600 rounded-lg p-4 gap-4 flex flex-col items-center justify-center"
+			>
 				<div class="p-3">
-					<img src={achievement.img} alt={achievement.title} />
+					<img class={i < 3 ? 'h-28' : 'h-full'} src={achievement.img} alt={achievement.title} />
 				</div>
-				<div>
-					<h3>{achievement.title}</h3>
-					<p>{achievement.desc}</p>
-				</div>
+				{#if i < 3}
+					<div>
+						<h3 class="font-semibold ">{achievement.title}</h3>
+						<p>{achievement.desc}</p>
+					</div>
+				{/if}
 			</div>
 		{/each}
 	</div>
@@ -52,16 +56,15 @@
 <style lang="scss">
 	.achievements {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		grid-auto-columns: 1fr;
 		grid-auto-rows: 1fr;
 		gap: 24px 24px;
 		grid-auto-flow: row;
 		grid-template-areas:
-			'google growth'
-			'fb growth'
-			'sask growth';
+			'google fb growth growth'
+			'sask sask growth growth';
 		.google {
 			grid-area: google;
 		}
