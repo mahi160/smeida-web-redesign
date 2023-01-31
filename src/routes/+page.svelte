@@ -1,13 +1,14 @@
 <script>
+	import Achievement from './ui/achievement.svelte';
 	import Hero from './ui/hero.svelte';
 	import Product from './ui/product.svelte';
-	import Rating from './ui/rating.svelte';
 </script>
 
 <svelte:head>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+	<title>sMedia| Top Digital Tech Company for Automotive</title>
 </svelte:head>
 
 <Hero />
 <Product />
-<Rating />
+<!-- <Rating /> -->
+<Achievement />

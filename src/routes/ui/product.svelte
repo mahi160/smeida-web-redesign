@@ -9,7 +9,7 @@
 			description:
 				'By showing the right car to the right buyer, we increase the number of engaged prospects who come to your VDPs.',
 			buttonHeader: 'Maximize Engagement',
-			path: ''
+			path: '/engage'
 		},
 		{
 			imgSrc: '/assets/home/features_2.png',
@@ -18,7 +18,7 @@
 			description:
 				'By employing tools like Smart Offer you can increase the likelihood of a lead conversion even further.',
 			buttonHeader: 'Optimize Digital Shopping',
-			path: ''
+			path: '/smart-offer'
 		},
 		{
 			imgSrc: '/assets/home/features_3.png',
@@ -27,7 +27,7 @@
 			description:
 				'Our services generate more high-quality VDP traffic per dollar than any other advertising channels',
 			buttonHeader: 'Lorem, ipsum.',
-			path: ''
+			path: '/data-sherpa'
 		}
 	];
 </script>

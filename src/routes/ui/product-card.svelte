@@ -17,7 +17,7 @@
 	<p class="text-text-500 dark:text-text-400">{description}</p>
 	<a href={path} class="flex items-center justify-center w-full mt-3">
 		<button
-			class="px-3 py-2 text-sm font-semibold text-white rounded bg-accent-500 hover:bg-accent-400"
+			class="px-4 py-3 mb-3 text-sm font-semibold text-white rounded-md bg-accent-500 hover:bg-accent-400"
 		>
 			{buttonHeader}
 		</button>
