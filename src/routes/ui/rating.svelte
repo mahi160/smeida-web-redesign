@@ -16,11 +16,11 @@
 			What Our Clients Think!
 		</h2>
 
-		<div class="flex items-center justify-evenly gap-10">
+		<div class="flex flex-col sm:flex-row items-center justify-evenly gap-10">
 			{#each ratings as rating}
 				<div class="flex items-center justify-center flex-col gap-4">
-					<Icon type="mat" icon={rating.logo} className="text-8xl text-accent-400" />
-					<h1 class="text-7xl font-bold text-primary-500">{rating.value}</h1>
+					<Icon type="mat" icon={rating.logo} className="text-6xl sm:text-8xl text-accent-400" />
+					<h1 class="text-5xl sm:text-7xl font-bold text-primary-500">{rating.value}</h1>
 					<p class="text-center tracking-wider">{rating.title}</p>
 				</div>
 			{/each}

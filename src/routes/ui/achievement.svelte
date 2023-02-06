@@ -29,7 +29,7 @@
 
 <section class="container px-5 pb-10 mx-auto sm:p-20 sm:pt-0">
 	<h2
-		class="max-w-lg pb-6 mb-4 text-3xl font-semibold md:text-4xl lg:text-5xl sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-primary-500"
+		class="max-w-lg pb-6 mb-4 text-2xl sm:text-3xl font-semibold md:text-4xl lg:text-5xl sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-primary-500"
 	>
 		Our Achievements
 	</h2>
@@ -76,6 +76,17 @@
 		}
 		.growth {
 			grid-area: growth;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.achievements {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-template-areas:
+				'google'
+				'fb'
+				'sask'
+				'growth';
 		}
 	}
 </style>
