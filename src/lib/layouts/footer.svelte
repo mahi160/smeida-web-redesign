@@ -6,32 +6,32 @@
 		{
 			title: 'Technology',
 			links: [
-				{ name: 'Direct Mail', path: '' },
-				{ name: 'Smart Offer', path: '' },
-				{ name: 'EPM', path: '' }
+				{ name: 'Direct Mail', path: '/error' },
+				{ name: 'Smart Offer', path: '/error' },
+				{ name: 'EPM', path: '/error' }
 			]
 		},
 		{
 			title: 'Marketing',
 			links: [
-				{ name: 'Engaged Facebook Marketing', path: '' },
-				{ name: 'Google Marketing', path: '' },
-				{ name: 'Bing Marketing', path: '' },
-				{ name: 'Acquire Inventory', path: '' }
+				{ name: 'Engaged Facebook Marketing', path: '/error' },
+				{ name: 'Google Marketing', path: '/error' },
+				{ name: 'Bing Marketing', path: '/error' },
+				{ name: 'Acquire Inventory', path: '/error' }
 			]
 		},
 		{
 			title: 'How We Help',
 			links: [
-				{ name: 'Understand Traffic', path: '' },
-				{ name: 'Take a Test Drive', path: '' }
+				{ name: 'Understand Traffic', path: '/error' },
+				{ name: 'Take a Test Drive', path: '/error' }
 			]
 		},
 		{
 			title: 'About',
 			links: [
-				{ name: 'Careers', path: '' },
-				{ name: 'News Desk', path: '' }
+				{ name: 'Careers', path: '/error' },
+				{ name: 'News Desk', path: '/error' }
 			]
 		}
 	];
